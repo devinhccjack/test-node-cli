@@ -4,7 +4,8 @@
   "description": "test-node-cli",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cr": "node ./src/auto-build-page/build-page.js"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,11 @@
   "bugs": {
     "url": "https://github.com/hechongchong/test-node-cli/issues"
   },
-  "homepage": "https://github.com/hechongchong/test-node-cli#readme"
+  "homepage": "https://github.com/hechongchong/test-node-cli#readme",
+  "dependencies": {
+    "axios": "^0.26.1",
+    "fs": "0.0.1-security",
+    "path": "^0.12.7",
+    "shelljs": "^0.8.5"
+  }
 }
