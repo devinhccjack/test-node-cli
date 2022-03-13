@@ -1,9 +1,10 @@
 # test-node-cli
-test-node-cli
+### 使用js脚本，根据模板页面，生成页面及路由
 
 ### package.json
+npm run **
 
-## 可选参数
+## 交互式可选参数-cli
 
 ## 执行脚本js
 
