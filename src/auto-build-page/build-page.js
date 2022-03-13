@@ -37,8 +37,8 @@ function buildPage(config) {
         }
       }) 
       shell.echo('结束生成页面')
-    //   shell.echo('开始新增路由……')
-      // addRou(`./views/${config.name}/index.vue`, config)
+      shell.echo('开始新增路由……')
+      addRou(`./views/${config.name}/index.vue`, config)
     }) 
   }
   function handleStr(str, config) { 
@@ -50,4 +50,37 @@ function buildPage(config) {
     str = str.replace('%geturl%', config.getlist.url)
     return str
   }
+
+  function addRou(paths, config) {
+    var templateStr = handleRouStr(
+      fs.readFileSync(path.resolve('./auto-build-page/template-route.txt')),
+      config,
+      paths
+    )
+    // 添加到路由文件
+    addToConf(templateStr)
+  }
+  function handleRouStr(str, config, paths) {
+    str = str.replace(/%path%/g, `/${config.name}`)
+    str = str.replace(/%name%/g, config.desc)
+    str = str.replace(/%name2%/g, `${config.desc}首页`)
+    str = str.replace(/%repath%/g, `/${config.name}/index`)
+    str = str.replace(/%requirepath%/g, paths)
+    return str
+  }
+
+  function addToConf(str) {
+    str += '// add-flag' // 添加的位置标记
+    var confStr = handleConfRouStr(readF(path.resolve('./src/addRoute.js')), str)
+    writeF(path.resolve('./src/addRoute.js'), confStr)
+    shell.echo('路由添加成功!')
+    shell.echo('结束生成页面')
+    shell.echo('>>>>>>')
+  }
+  function handleConfRouStr(ori, str) {
+    ori = ori.replace('// add-flag', str)
+    return ori
+  }
+  
+
   

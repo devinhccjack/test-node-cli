@@ -9,7 +9,23 @@ var addConfig = [
             method: 'GET', url: 'http://test.req/getlist',
         },
     },
-    {//测试生成空白页
-        open: true, helloworld: true, desc: '自动生成空白页面', name: 'autoHellopage',
-    },] 
+    {
+        //测试生成空白页
+        open: true, 
+        helloworld: true, 
+        desc: '自动生成空白页面', 
+        name: 'autoHellopage',
+    },
+    {
+        //测试生成空白页
+        open: true, 
+        helloworld: false, 
+        desc: '自动生成空白页面', 
+        name: 'autoWhitepage',
+        getlist: {//表格数据请求相关
+            method: 'GET', url: 'http://test.req/getlist',
+        },
+    },
+] 
+
 module.exports = addConfig
