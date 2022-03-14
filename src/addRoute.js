@@ -1,4 +1,5 @@
 const addRoute = [
+
 {
   path: '/autoWhitepage',
   component: Home,
@@ -9,20 +10,6 @@ const addRoute = [
       path: '/autoWhitepage/index',
       component: (resolve) =>
         require(['./views/autoWhitepage/index.vue'], resolve),
-      name: '自动生成空白页面首页'
-    }
-  ]
-},
-{
-  path: '/autoHellopage',
-  component: Home,
-  name: '自动生成空白页面',
-  redirect: { path: '/autoHellopage/index' },
-  children: [
-    {
-      path: '/autoHellopage/index',
-      component: (resolve) =>
-        require(['./views/autoHellopage/index.vue'], resolve),
       name: '自动生成空白页面首页'
     }
   ]

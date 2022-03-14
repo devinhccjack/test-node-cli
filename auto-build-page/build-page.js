@@ -18,11 +18,13 @@ function buildPage(config) {
       var str = ''
       if (config.helloworld) { 
         // 新建空白页，读取空白页模版 
-        var sss=path.resolve('./src/auto-build-page/template-helloworld.vue')
+        // var sss=path.resolve('./src/auto-build-page/template-helloworld.vue')
+        var sss=path.resolve('./auto-build-page/template-helloworld.vue')
         var fff=fs.readFileSync(sss) 
         str = handleStr(fff.toString(),config)
       } else { 
-        var sss=path.resolve('./src/auto-build-page/template-table.vue')
+        // var sss=path.resolve('./src/auto-build-page/template-table.vue')
+        var sss=path.resolve('./auto-build-page/template-table.vue')
         var fff=fs.readFileSync(sss) 
         str = handleStr(fff.toString(),config)
       } 
