@@ -1,31 +1,33 @@
 # test-node-cli
-### 使用js脚本，根据模板页面，生成页面及路由
+## 使用js脚本，根据模板页面，生成页面及路由
 
-### package.json
-npm run **
+git clone https://github.com/hechongchong/test-node-cli.git
 
-## 交互式可选参数-cli
+cd test-node-cli && npm i --save
 
-## 执行脚本js
+npm link
 
+### 配置页面参数：
+
+./auto-build-page/addConfig.js
 
 ### 根据模板自动生成页面-js
-
-## 配置参数：
-
-./src/auto-build-page/addConfig.js
-
-## 执行命令：
-
 ./ 
 node ./auto-build-page/build-page.js
 
+### 执行命令：
+
 npm run bpage
 
+### package.json
+
+npm run **
+
+### 交互式可选参数-cli
+### 执行脚本js
 
 
-
-### 参考
+## 参考
 
 前端工程化--Vue-CLI自动生成页面
 
