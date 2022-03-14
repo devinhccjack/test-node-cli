@@ -33,4 +33,8 @@ npm run **
 
 https://blog.csdn.net/caomage/article/details/103771918?spm=1001.2101.3001.6650.4&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-4.pc_relevant_antiscanv2&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-4.pc_relevant_antiscanv2&utm_relevant_index=8
 
+vue根据后台传递的json数据生成动态配置页面（一）动态组件
+
+https://blog.csdn.net/qq_42306286/article/details/104650236?utm_medium=distribute.pc_relevant.none-task-blog-2~default~baidujs_utm_term~default-0.pc_relevant_default&spm=1001.2101.3001.4242.1&utm_relevant_index=3
+
 
